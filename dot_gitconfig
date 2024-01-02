@@ -1,0 +1,12 @@
+[user]
+	name = jinwood
+	email = jinw@protonmail.com
+[core]
+	editor = vim
+[alias]
+    local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
+
+[pull]
+	rebase = false
+[credential]
+	helper = osxkeychain
